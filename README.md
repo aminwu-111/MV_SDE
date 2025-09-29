@@ -9,3 +9,4 @@ The file 'Modkuramoto_obs_T_100.txt' contains the data for the Modified Kuramoto
 
 'PMCMC_MODKURAMOTO.m' and ‘MLPMCMC_MODKURAMOTO.m' implement the PMCMC and MLPMCMC algorithm for the Modified Kuramoto model, which generates results in Figure 2.
 
+'pmmh_l3_KU_rate.m'
