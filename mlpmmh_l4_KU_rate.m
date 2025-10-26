@@ -22,8 +22,8 @@ Nl = zeros(LP - Lmin +1,1);
 ML = zeros(LP - Lmin +1,1);
 for l = 1:LP - Lmin+1
     hl(l) = 2^(-l-Lmin+1);
-    Nl(l) =  floor(0.5*2^(2*LP - (l+Lmin-1)) +20);
-	ML(l) = floor(0.2 * 2^(2*LP - (l+Lmin-1)) +10);
+    Nl(l) =  floor(0.5*2^(2*LP - 1.5*(l+Lmin-1)) +20);
+	ML(l) = floor(0.2 * 2^(2*LP - 1.5*(l+Lmin-1)) +10);
     X0_m{l,1} = x0 * ones(ML(l),1);
 end
 X0_pf = x0 * ones(particle_count, 1);
@@ -411,3 +411,4 @@ function a = log_normpdf(x,m,s)
     a = -log(2*pi)/2 - log(s) - (x-m).^2/(2*s^2);
     %a = -(x-m).^2/(2*s^2);
 end
+
